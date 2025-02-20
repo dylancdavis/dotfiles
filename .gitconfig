@@ -1,0 +1,22 @@
+[user]
+	email = dylcdav@gmail.com
+	name = Cole Davis
+[alias]
+	br = branch
+	aa = add .
+	ca = commit --amend
+	st = status
+	cm = commit -m
+	cme = commit -m --allow-empty
+	can = commit --amend --no-edit --date=now
+	ch = checkout
+	chm = checkout main
+	chd = checkout development
+	dh = diff HEAD
+	ds = diff --staged
+	grade = log --graph --decorate
+	graade = log --graph --decorate --all
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
