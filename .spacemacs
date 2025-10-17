@@ -57,7 +57,8 @@ This function should only modify configuration layer settings."
      ;; version-control
      themes-megapack
      treemacs
-     (vue :variables vue-backend 'lsp))
+     (vue :variables
+          vue-backend 'lsp))
 
 
    ;; List of additional packages that will be installed without being wrapped
