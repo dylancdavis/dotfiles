@@ -20,3 +20,5 @@
 	editor = vim
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
