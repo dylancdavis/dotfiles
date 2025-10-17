@@ -39,7 +39,9 @@ This function should only modify configuration layer settings."
    ;; ----------------------------------------------------------------
    ;; auto-completion
    ;; better-defaults
-   '(typescript
+   '((typescript :variables
+                 typescript-fmt-on-save t
+                 typescript-fmt-tool 'prettier)
      emacs-lisp
      git
      helm
@@ -55,7 +57,7 @@ This function should only modify configuration layer settings."
      ;; version-control
      themes-megapack
      treemacs
-     vue)
+     (vue :variables vue-backend 'lsp))
 
 
    ;; List of additional packages that will be installed without being wrapped
