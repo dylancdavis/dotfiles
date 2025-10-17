@@ -45,7 +45,8 @@ This function should only modify configuration layer settings."
      emacs-lisp
      git
      helm
-     lsp
+     (lsp :variables
+          lsp-lens-enable t)
      ;; markdown
      multiple-cursors
      ;; org
