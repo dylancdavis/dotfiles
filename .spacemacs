@@ -647,7 +647,13 @@ This function is called at the very end of Spacemacs initialization."
                 visual-fill volatile-highlights vundo web-beautify
                 web-completion-data web-mode wgrep white-sand-theme winum
                 writeroom-mode ws-butler yasnippet-snippets zen-and-art-theme
-                zenburn-theme zonokai-emacs)))
+                zenburn-theme zonokai-emacs))
+   '(safe-local-variable-values
+     '((web-mode-indent-style . 2) (web-mode-block-padding . 2)
+       (web-mode-script-padding . 2) (web-mode-style-padding . 2)
+       (typescript-backend . tide) (typescript-backend . lsp)
+       (javascript-backend . tide) (javascript-backend . tern)
+       (javascript-backend . lsp))))
   (custom-set-faces
    ;; custom-set-faces was added by Custom.
    ;; If you edit it by hand, you could mess it up, so be careful.
