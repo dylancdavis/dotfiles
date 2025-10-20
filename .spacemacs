@@ -598,6 +598,17 @@ before packages are loaded."
 
   ;; Enable visual-fill-column-mode in vterm (terminal) buffers
   (add-hook 'vterm-mode-hook #'visual-fill-column-mode)
+
+  ;; Customize vterm colors with Atom One theme colors
+  (with-eval-after-load 'vterm
+    (set-face-attribute 'vterm-color-black nil :foreground "#282c34" :background "#282c34")
+    (set-face-attribute 'vterm-color-red nil :foreground "#e06c75" :background "#e06c75")
+    (set-face-attribute 'vterm-color-green nil :foreground "#98c379" :background "#98c379")
+    (set-face-attribute 'vterm-color-yellow nil :foreground "#e5c07b" :background "#e5c07b")
+    (set-face-attribute 'vterm-color-blue nil :foreground "#61afef" :background "#61afef")
+    (set-face-attribute 'vterm-color-magenta nil :foreground "#c678dd" :background "#c678dd")
+    (set-face-attribute 'vterm-color-cyan nil :foreground "#56b6c2" :background "#56b6c2")
+    (set-face-attribute 'vterm-color-white nil :foreground "#dcdfe4" :background "#dcdfe4"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
