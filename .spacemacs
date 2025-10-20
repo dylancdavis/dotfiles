@@ -573,12 +573,15 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
+  ;; Set lsp-ui-doc position to appear at cursor
+  (setq lsp-ui-doc-position 'at-point)
+
   ;; Custom vim-style keybindings for LSP navigation
   (with-eval-after-load 'lsp-mode
     (evil-define-key 'normal lsp-mode-map
       (kbd "g r") 'lsp-find-references
       (kbd "g i") 'lsp-find-implementation
-      (kbd "g h") 'lsp-describe-thing-at-point
+      (kbd "g h") 'lsp-ui-doc-glance
       (kbd "g t") 'lsp-find-type-definition))
   )
 
