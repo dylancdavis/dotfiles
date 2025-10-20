@@ -594,6 +594,7 @@ before packages are loaded."
   ;; With automatic centering
   (global-visual-fill-column-mode t)
   (setq-default visual-fill-column-center-text t)
+  (setq-default fill-column 120)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
