@@ -595,6 +595,9 @@ before packages are loaded."
   (global-visual-fill-column-mode t)
   (setq-default visual-fill-column-center-text t)
   (setq-default fill-column 120)
+
+  ;; Enable visual-fill-column-mode in vterm (terminal) buffers
+  (add-hook 'vterm-mode-hook #'visual-fill-column-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
