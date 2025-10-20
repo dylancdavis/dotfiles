@@ -589,8 +589,12 @@ before packages are loaded."
   ;; g k - jump forward in buffer history (like Vim's C-i)
   (define-key evil-normal-state-map (kbd "g j") 'evil-jump-backward)
   (define-key evil-normal-state-map (kbd "g k") 'evil-jump-forward)
-  )
 
+  ;; Enable visual-fill-column-mode in all file-visiting buffers
+  ;; With automatic centering
+  (global-visual-fill-column-mode t)
+  (setq-default visual-fill-column-center-text t)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
