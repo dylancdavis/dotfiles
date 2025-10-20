@@ -583,6 +583,12 @@ before packages are loaded."
       (kbd "g i") 'lsp-find-implementation
       (kbd "g h") 'lsp-ui-doc-glance
       (kbd "g t") 'lsp-find-type-definition))
+
+  ;; Custom vim-style keybindings for buffer history navigation
+  ;; g j - jump backward in buffer history (like Vim's C-o)
+  ;; g k - jump forward in buffer history (like Vim's C-i)
+  (define-key evil-normal-state-map (kbd "g j") 'evil-jump-backward)
+  (define-key evil-normal-state-map (kbd "g k") 'evil-jump-forward)
   )
 
 
